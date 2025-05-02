@@ -1,0 +1,36 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "02622458eda8071e8c6f67250e298be2"
+name = "admin-block-extension-app"
+handle = "admin-block-extension-app"
+application_url = "https://base-letting-minerals-buzz.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/uninstalled" ]
+  uri = "/webhooks/app/uninstalled"
+
+  [[webhooks.subscriptions]]
+  topics = [ "app/scopes_update" ]
+  uri = "/webhooks/app/scopes_update"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://base-letting-minerals-buzz.trycloudflare.com/auth/callback",
+  "https://base-letting-minerals-buzz.trycloudflare.com/auth/shopify/callback",
+  "https://base-letting-minerals-buzz.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
