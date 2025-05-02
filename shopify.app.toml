@@ -3,7 +3,7 @@
 client_id = "02622458eda8071e8c6f67250e298be2"
 name = "admin-block-extension-app"
 handle = "admin-block-extension-app"
-application_url = "https://base-letting-minerals-buzz.trycloudflare.com"
+application_url = "https://betty-might-zoo-lu.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://base-letting-minerals-buzz.trycloudflare.com/auth/callback",
-  "https://base-letting-minerals-buzz.trycloudflare.com/auth/shopify/callback",
-  "https://base-letting-minerals-buzz.trycloudflare.com/api/auth/callback"
+  "https://betty-might-zoo-lu.trycloudflare.com/auth/callback",
+  "https://betty-might-zoo-lu.trycloudflare.com/auth/shopify/callback",
+  "https://betty-might-zoo-lu.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
